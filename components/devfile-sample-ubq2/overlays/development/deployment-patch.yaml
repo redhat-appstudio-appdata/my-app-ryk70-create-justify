@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ubq2
+  namespace: bgriggs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7e86db4079838334526b9f563d5d946fbf518b1323bd35c56dc93a5e0050f918
+        name: container-image
+        resources: {}
+status: {}
