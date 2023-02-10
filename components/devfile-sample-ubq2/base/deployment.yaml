@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-ubq2
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:bgriggs-tenant-devfile-sample-ubq2
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7e86db4079838334526b9f563d5d946fbf518b1323bd35c56dc93a5e0050f918
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
